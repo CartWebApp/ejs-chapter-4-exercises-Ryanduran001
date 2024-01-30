@@ -1,9 +1,29 @@
 function range(start, end, step = 1) {
-  // Add code.
+  if (start < end) {
+    let arrange = [];
+    for (k = start; k <= end; k += step) {
+      arrange.push(k);
+    }
+    return(arrange);
+  }
+  else if (end < start) {
+      let arrange = [];
+      for (k = start; k >= end; k += step) {
+        arrange.push(k);
+      }
+      return(arrange);
+  }
+  else {
+    return;
+  }
 }
 
 function sum(numbers) {
-  // Add code.
+  let summ = 0;
+  for (k = 0; k < numbers.length; k++) {
+    summ += numbers[k];
+  }
+  return(summ);
 }
 
 
